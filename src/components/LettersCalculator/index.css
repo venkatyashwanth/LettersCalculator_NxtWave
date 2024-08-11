@@ -1,0 +1,81 @@
+.appBg {
+    background-image: linear-gradient(to right, #1d976c, #93f9b9);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.appBg .app-content {
+    width: calc(100% - 80px);
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-content .calc-input input[type="text"] {
+    background-color: transparent;
+    border: 1px solid #e4e7eb;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+.app-content .calc-input .heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 52px;
+    width: 320px;
+    color: #fff;
+}
+
+.app-content .calc-input .input-content {
+    margin-top: 20px;
+}
+
+.app-content .calc-input .input-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.app-content .calc-input input[type="text"]:focus {
+    outline: none;
+}
+
+.app-content .calc-input .display-box {
+    margin-top: 20px;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+.app-content .calc-input .display-box p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #219a6f;
+}
+
+.app-content .image-wrapper img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767.5px){
+    .appBg .app-content{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .app-content .calc-input .heading{
+        font-size: 28px;
+        text-align: center;
+    }
+    .app-content .calc-input .display-box{
+        width: 100%;
+    }
+}
